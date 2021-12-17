@@ -27,6 +27,11 @@ resource "checkly_check" "api-check-1" {
 
 }
 
+provider "checkly" {
+  api_key    = var.checkly_api_key
+  account_id = var.checkly_account_id
+}
+
 variable "checkly_api_key" {
   description = "Checkly user-level API key - https://app.checklyhq.com/settings/account/api-keys"
 }
