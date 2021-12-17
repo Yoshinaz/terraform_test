@@ -23,6 +23,7 @@ variable "checkly_api_key" {
   description = "Checkly user-level API key - https://app.checklyhq.com/settings/account/api-keys"
 }
 
+#test
 # export TF_VAR_checkly_account_id=""
 variable "checkly_account_id" {
   description = "Checkly Account ID - https://app.checklyhq.com/settings/account/general"
