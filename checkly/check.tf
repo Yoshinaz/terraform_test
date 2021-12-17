@@ -1,3 +1,15 @@
+terraform {
+  required_version = "~> 1.0"
+
+  required_providers {
+    checkly = {
+      source  = "checkly/checkly"
+      version = "~> 1.0"
+    }
+  }
+}
+
+
 resource "checkly_check" "api-check-1" {
   name              = "API check 1"
   type              = "API"

@@ -1,13 +1,6 @@
 terraform {
   required_version = "~> 1.0"
 
-  required_providers {
-    checkly = {
-      source  = "checkly/checkly"
-      version = "~> 1.0"
-    }
-  }
-
   backend "remote" {
     hostname     = "app.terraform.io"
     organization = "YoshinazOrg"
@@ -27,7 +20,6 @@ variable "checkly_api_key" {
 variable "checkly_account_id" {
   description = "Checkly Account ID - https://app.checklyhq.com/settings/account/general"
 }
-
 
 
 module "check" {
