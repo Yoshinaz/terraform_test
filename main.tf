@@ -35,4 +35,6 @@ provider "checkly" {
 
 module "checkly" {
   source = "./checkly"
+  checkly_api_key = var.checkly_api_key
+  checkly_account_id = var.checkly_account_id
 }

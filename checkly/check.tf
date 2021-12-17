@@ -26,3 +26,12 @@ resource "checkly_check" "api-check-1" {
   use_global_alert_settings = true
 
 }
+
+variable "checkly_api_key" {
+  description = "Checkly user-level API key - https://app.checklyhq.com/settings/account/api-keys"
+}
+
+# export TF_VAR_checkly_account_id=""
+variable "checkly_account_id" {
+  description = "Checkly Account ID - https://app.checklyhq.com/settings/account/general"
+}
