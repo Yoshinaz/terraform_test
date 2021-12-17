@@ -1,7 +1,7 @@
 resource "checkly_check" "api-check-1" {
   name              = "API check 1"
   type              = "API"
-  frequency         = 60
+  frequency         = 720
   activated         = true
   muted             = true
   double_check      = true
